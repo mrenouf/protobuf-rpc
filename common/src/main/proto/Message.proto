@@ -1,0 +1,18 @@
+option java_package = "com.bitgrind.protobuf.rpc";
+option java_outer_classname = "MessagePb";
+
+enum Status {
+  SUCCESS     = 1;
+  FAILURE     = 2;
+}
+
+message Request {
+  optional string name       = 1;
+  optional bytes buffer      = 4;
+}
+
+message Response {
+  required Status status     = 1;
+  optional string statusText = 2;
+  optional bytes buffer      = 3;
+}

@@ -11,7 +11,8 @@ import org.apache.commons.httpclient.methods.PostMethod;
 
 import com.bitgrind.protobuf.rpc.MessagePb.Request;
 import com.bitgrind.protobuf.rpc.MessagePb.Response;
-import com.bitgrind.protobuf.rpc.http.ResponseHandler.Result;
+import com.bitgrind.protobuf.rpc.ResponseHandler;
+import com.bitgrind.protobuf.rpc.ResponseHandler.Result;
 import com.google.protobuf.MessageLite;
 import com.google.protobuf.MessageLite.Builder;
 

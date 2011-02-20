@@ -15,6 +15,7 @@ import com.bitgrind.protobuf.rpc.MessagePb;
 import com.bitgrind.protobuf.rpc.MessagePb.Request;
 import com.bitgrind.protobuf.rpc.MessagePb.Response;
 import com.bitgrind.protobuf.rpc.MessagePb.Status;
+import com.bitgrind.protobuf.rpc.ProtobufService;
 import com.google.protobuf.MessageLite;
 
 public class ProtobufServiceServlet extends HttpServlet {

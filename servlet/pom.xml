@@ -1,23 +1,23 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.bitgrind.protobuf.rpc</groupId>
-  <artifactId>protobuf-servlet</artifactId>
+  <groupId>com.bitgrind.protobuf</groupId>
+  <artifactId>protobuf-http-rpc-servlet</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
-  <name>Protobuf RPC Servlet</name>
-  <description>Protobuf RPC servlet</description>
+  <name>Protobuf HTTP RPC Servlet</name>
+  <description>Server implementation for RPC over HTTP using Protobuf buffers</description>
 
   <parent>
-    <groupId>com.bitgrind.protobuf.rpc</groupId>
-    <artifactId>protobuf-rpc-parent</artifactId>
+    <groupId>com.bitgrind.protobuf</groupId>
+    <artifactId>protobuf-http-rpc</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
 
   <dependencies>
     <dependency>
-      <groupId>com.bitgrind.protobuf.rpc</groupId>
-      <artifactId>protobuf-rpc</artifactId>
+      <groupId>com.bitgrind.protobuf</groupId>
+      <artifactId>protobuf-http-rpc-common</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>
 

@@ -1,0 +1,32 @@
+option java_package = "com.bitgrind.protobuf.rpc";
+option java_outer_classname = "SamplePb";
+
+
+message Contact {
+	required string email = 1;
+	required string name = 2;
+	optional int32 rank = 4;
+}
+
+message ActivityStream {
+	required int32 timestamp = 1;
+	repeated Item items = 2;
+}
+
+message Item {
+  required int32 index = 1;
+  required string label = 2;
+  optional bool processed = 4;
+  optional int32 result_per_page = 10 [default = 10];
+  enum Category {
+    UNIVERSAL = 0;
+    WEB = 1;
+    IMAGES = 2;
+    LOCAL = 3;
+    NEWS = 4;
+    PRODUCTS = 5;
+    VIDEO = 6;
+  }
+  optional Category category = 14 [default = UNIVERSAL];
+  required Contact contact = 20;
+}
